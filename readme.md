@@ -14,3 +14,9 @@ forge build will not recognise @Openzellin/ope... Need to do remapping in the fo
 Once test file is ready, run command forge test
 
 makefiles are ways to collect your scripts and collect what people want to do with your application. We most likely don't make our own makefiles, we just copy it.
+
+To deploy to a local network - we will use hardhat to run our local network - run cmd 'yarn add hardhat'
+then 'yarn hardhat'
+then 'yarn hardhat node' - to setup sample accounts, with their private keys. Now we have a fake blockchain running on our localhost.
+
+To deploy our staked contract to local blockchian - 'forge create StakeContract --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 --rpc-url http://127.0.0.1:8545/'
