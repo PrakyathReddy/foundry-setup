@@ -14,8 +14,8 @@ contract StakeContractTest is DSTest {
     }
 
     //start writing actual tests
-    function testExample() public {
-        uint256 amount = 10e18;
+    function testExample(uint8 amount) public {
+        //uint256 amount = 10e18;
         mockERC20.approve(address(stakeContract),amount);
         bool stakePassed = stakeContract.stake(amount,address(mockERC20));
         assertTrue(stakePassed);

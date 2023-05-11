@@ -1,4 +1,4 @@
-forge init - to get a project started
+forge init - to get a project started. To initialize the repository.
 
 lib folder - includes dependencies for our packages here
 src - is the equivalent of contracts folder
@@ -12,3 +12,5 @@ forge install Openzeppelin/openzellein-contracts - before doing forge install ma
 forge build will not recognise @Openzellin/ope... Need to do remapping in the foundry.toml file
 
 Once test file is ready, run command forge test
+
+makefiles are ways to collect your scripts and collect what people want to do with your application. We most likely don't make our own makefiles, we just copy it.
