@@ -10,3 +10,5 @@ foundry.toml - kind of like hardhat.config with a bunch of parameters
 forge build - to compile
 forge install Openzeppelin/openzellein-contracts - before doing forge install make sure all untracked files are committed.
 forge build will not recognise @Openzellin/ope... Need to do remapping in the foundry.toml file
+
+Once test file is ready, run command forge test
