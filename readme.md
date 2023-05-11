@@ -8,3 +8,5 @@ test folder - files have .t.sol extension. To run a test, cmd line - forge test 
 foundry.toml - kind of like hardhat.config with a bunch of parameters
 
 forge build - to compile
+forge install Openzeppelin/openzellein-contracts - before doing forge install make sure all untracked files are committed.
+forge build will not recognise @Openzellin/ope... Need to do remapping in the foundry.toml file
