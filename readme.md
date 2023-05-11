@@ -7,6 +7,8 @@ test folder - files have .t.sol extension. To run a test, cmd line - forge test 
 .gitmodules - this is where we actually define what github repos we want to pull in into our lib folder
 foundry.toml - kind of like hardhat.config with a bunch of parameters
 
+dstest - allows you to run tests, create asserts or logs
+
 forge build - to compile
 forge install Openzeppelin/openzellein-contracts - before doing forge install make sure all untracked files are committed.
 forge build will not recognise @Openzellin/ope... Need to do remapping in the foundry.toml file
@@ -20,3 +22,15 @@ then 'yarn hardhat'
 then 'yarn hardhat node' - to setup sample accounts, with their private keys. Now we have a fake blockchain running on our localhost.
 
 To deploy our staked contract to local blockchian - 'forge create StakeContract --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 --rpc-url http://127.0.0.1:8545/'
+
+setUp()
+
+This function is called before each test or testFail function, perfect for initialization of contracts and additional setup.
+
+test*()
+
+Functions that start with the keyword test will get run with forge and expect to not revert in order to pass.
+
+testFail*()
+
+Functions that start with the keyword test will get run with forge and expect to revert in order to pass.
